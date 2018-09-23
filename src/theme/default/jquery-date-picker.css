@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+.date-picker-calendar .pull-left {float:left;}
+.date-picker-calendar .pull-right {float:right;}
+.date-picker-calendar .clearfix{*zoom:1;}
+.date-picker-calendar .clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
+.date-picker-calendar .clearfix:after{clear:both;}
+
+.date-picker-calendar {
+    font-size:12px;font-family: "微软雅黑",Arial, Simsun, Verdana, sans-serif;
+    outline: 1px solid #ccc;
+    width:181px;
+    height:194px;
+    background-color: #fff;
+}
+.date-picker-calendar ul {
+    list-style: none;
+    margin:0px;
+    padding:0px;
+}
+.date-picker-calendar .header {
+    height:26px;
+    line-height: 26px;
+    margin-bottom: 2px;
+}
+
+.date-picker-calendar .header > div {
+    float: left;
+}
+
+.date-picker-calendar .header .prev-year,
+.date-picker-calendar .header .prev-month,
+.date-picker-calendar .header .next-month,
+.date-picker-calendar .header .next-year {
+    background-image: url(img.gif);
+    background-repeat: no-repeat;
+    height:9px;
+    width:9px;
+    margin-top:9px;
+    cursor: pointer;
+}
+.date-picker-calendar .header .prev-year {
+    background-position: -3px -4px;margin-left:5px;
+}
+.date-picker-calendar .header .prev-month {
+    background-position: -21px -4px;margin-left: 8px;
+}
+.date-picker-calendar .header .next-month {
+    background-position: -38px -4px;margin-left: 5px;
+}
+.date-picker-calendar .header .next-year {
+    background-position: -52px -4px;margin-left: 4px;
+}
+
+.date-picker-calendar .header .chosen-month {
+    position: relative;margin-right: 9px;
+}
+.date-picker-calendar .header .chosen-year {
+    position: relative;margin-left: 9px;
+}
+.date-picker-calendar .header .month,
+.date-picker-calendar .header .year {
+    font-size:12px;height:14;width:50px;text-align: center;cursor: pointer;
+    border:none;
+    outline: none;
+}
+.date-picker-calendar .header .year-list,
+.date-picker-calendar .header .month-list{
+    width:60px;background: #fff;position: absolute;border:1px solid #aaa;top:22px;z-index:10;
+    display: none;
+}
+.date-picker-calendar .header .year-list {
+    width:70px;;z-index:20;
+}
+.date-picker-calendar .header .year-list li.item,
+.date-picker-calendar .header .month-list li.item {
+    float:left;background: #fff;width:30px;text-align: center;cursor: pointer;height:22px;line-height:22px;
+}
+.date-picker-calendar .header .year-list li.item {
+    width: 35px;
+}
+.date-picker-calendar .header .year-list li.item:hover,
+.date-picker-calendar .header .month-list li.item:hover {
+    background: #eee
+}
+.date-picker-calendar .header .year-list li.item.item-active,
+.date-picker-calendar .header .month-list li.item.item-active {
+    background: #BDEBEE
+}
+.date-picker-calendar .header .year-list button {
+    border:none;margin:4px;
+}
+
+.date-picker-calendar .content td:hover {
+    background: #eee;cursor: pointer;
+}
+.date-picker-calendar .content td.ui-weekend {
+    color: blue;
+}
+.date-picker-calendar .content td.ui-prev-month {
+    color:#aaa
+}
+.date-picker-calendar .content td.ui-next-month {
+    color: #aaa;
+}
+.date-picker-calendar .content td.ui-active {
+    background:#BDEBEE;
+}
+.date-picker-calendar .content table {
+    border-collapse: collapse;margin:0 auto;border:1px solid #eee;
+}
+.date-picker-calendar .content .week {
+    background: #eee;
+}
+.date-picker-calendar .content td {
+    width:25px;height:20px;text-align: center;line-height: 20px;padding:0px;
+}
+
+.date-picker-calendar .footer {
+    text-align: center;height:26px;line-height: 26px;
+}
+.date-picker-calendar .footer .button {
+    font-size: 12px;background: buttonface;border:1px solid #ccc;padding: 0px 8px;outline:none;
+}
+.date-picker-calendar .footer .button:hover {
+    background: #abcdef;
+}
